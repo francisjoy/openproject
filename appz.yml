@@ -27,14 +27,17 @@ properties:
     SECRET_KEY_BASE: 
       vault: SECRET_KEY_BASE
     FILESYNC_ENABLE: 'yes'
-    ATTACHMENTS_STORAGE_PATH: /appz/data/openproject
+    RSYNC_SECRET:
+      vault: RSYNC_SECRET
+    SYMLINK: "enabled"
+    ATTACHMENTS_STORAGE_PATH: /appz/data/openproject/assets/files
+    
     POSTGRES_HOST: openproject-postgres-13-x    
     POSTGRES_PORT: 5432
     POSTGRES_DB: openproject
     POSTGRES_USER: openproject
     POSTGRES_PASSWORD: 
       vault: POSTGRESQL_OPENPROJECT_PASSWORD
-    RSYNC_SECRET:
-      vault: RSYNC_SECRET
+    
     ENABLE_BOARDS: 0
     revision: 24
