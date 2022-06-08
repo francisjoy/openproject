@@ -22,6 +22,10 @@ volumes:
    mount: /appz/data/openproject  
    name: assets
    size: 5Gi
+ - claim: openproject-backup
+   mount: /appz/backup  
+   name: backup
+   size: 5Gi
     
 properties:
     SECRET_KEY_BASE: 
