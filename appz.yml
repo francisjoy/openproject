@@ -44,4 +44,4 @@ properties:
       vault: POSTGRESQL_OPENPROJECT_PASSWORD
     
     ENABLE_BOARDS: 0
-    revision: 25
+    revision: 26
